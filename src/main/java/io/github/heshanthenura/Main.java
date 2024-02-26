@@ -1,4 +1,4 @@
-package io.heshanthenura.github;
+package io.github.heshanthenura;
 
 public class Main {
     public static void main(String[] args) {
