@@ -69,7 +69,7 @@ float randomFloat = EasyJava.randomFloat(min, max);
 Generates a random float within the specified range.
 
 * min: the minimum value of the range (inclusive)
-* max: the maximum value of the range (exclusive)
+* max: the maximum value of the range (inclusive)
 
 #### Generating a Random Boolean Value
 ```java
