@@ -50,9 +50,9 @@ public class EasyJava {
      * Generates a random double within the specified range.
      *
      * @param min the minimum value of the range (inclusive)
-     * @param max the maximum value of the range (exclusive)
+     * @param max the maximum value of the range (inclusive)
      * @return a random double within the specified range
-     * @throws IllegalArgumentException if min is greater than or equal to max
+     * @throws IllegalArgumentException if min is greater than max
      */
     public static double randomDouble(double min, double max) {
         if (min >= max) {
@@ -65,9 +65,9 @@ public class EasyJava {
      * Generates a random float within the specified range.
      *
      * @param min the minimum value of the range (inclusive)
-     * @param max the maximum value of the range (exclusive)
+     * @param max the maximum value of the range (inclusive)
      * @return a random float within the specified range
-     * @throws IllegalArgumentException if min is greater than or equal to max
+     * @throws IllegalArgumentException if min is greater than max
      */
     public static float randomFloat(float min, float max) {
         if (min >= max) {

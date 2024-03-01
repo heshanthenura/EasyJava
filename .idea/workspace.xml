@@ -7,7 +7,6 @@
     <list default="true" id="8fd530bd-9c81-441f-bd1c-ca21879f6c36" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/heshanthenura/EasyJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/heshanthenura/EasyJava.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +143,7 @@
       <workItem from="1709273391776" duration="2061000" />
       <workItem from="1709278085231" duration="1712000" />
       <workItem from="1709287077184" duration="1433000" />
-      <workItem from="1709300749765" duration="6961000" />
+      <workItem from="1709300749765" duration="7546000" />
     </task>
     <servers />
   </component>
