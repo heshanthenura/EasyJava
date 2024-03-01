@@ -16,7 +16,7 @@ implementation group: 'io.github.heshanthenura', name: 'easy-java', version: '0.
 #### for other build tools check this [site](https://central.sonatype.com/artifact/io.github.heshanthenura/easy-java).
 
 ### Menu
-#### 1. [Generating a Range of Integers](#generating-a-range-of-integers)
+#### 1. [Generating a Range of Integers](#generating-a-range-of-integers-1)
 #### 2. [Generating Random Numbers](#generating-random-numbers)
  - 2.1 [Integer](#integer)
  - 2.2 [Double](#double)
