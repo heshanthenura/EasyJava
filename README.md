@@ -19,13 +19,29 @@ implementation group: 'io.github.heshanthenura', name: 'easy-java', version: '0.
 
 #### Generating a Range of Integers
 ```java 
+List<Integer> numbers = EasyJava.range(start);
+easyJava.range(10);
+// Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+List<Integer> numbers = EasyJava.range(start, end);
+easyJava.range(0,5);
+// Output: [0, 1, 2, 3, 4]
+
+easyJava.range(5,0);
+// Output: [5, 4, 3, 2, 1]
+
 List<Integer> numbers = EasyJava.range(start, end, step);
+easyJava.range(0, 10, 2);
+// Output: [0, 2, 4, 6, 8]
+
+easyJava.range(20, 0, -3);
+// Output: [20, 17, 14, 11, 8, 5, 2]
 ```
 Generates a list of integers within the specified range.
 
 * start: the starting value of the range (inclusive)
-* end: the ending value of the range (exclusive)
-* step: the step size between consecutive integers
+* end: the ending value of the range (exclusive) (optional)
+* step: the step size between consecutive integers (optional)
 
 #### Generating Random Numbers
 #### Integer
