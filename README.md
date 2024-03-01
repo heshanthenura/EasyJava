@@ -15,9 +15,18 @@ implementation group: 'io.github.heshanthenura', name: 'easy-java', version: '0.
 ```
 #### for other build tools check this [site](https://central.sonatype.com/artifact/io.github.heshanthenura/easy-java).
 
+### Menu
+#### 1. [Generating a Range of Integers](#generating-a-range-of-integers)
+#### 2. [Generating Random Numbers](#generating-random-numbers)
+ - 2.1 [Integer](#integer)
+ - 2.2 [Double](#double)
+ - 2.3 [Float](#float)
+#### 3. [Generating a Random Boolean Value](#generating-a-random-boolean-value)
+#### 4. [Getting a Random Element from a List](#getting-a-random-element-from-a-list)
+
 ### Usage
 
-#### Generating a Range of Integers
+#### 1. Generating a Range of Integers
 ```java 
 List<Integer> numbers = EasyJava.range(start);
 easyJava.range(10);
