@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fd530bd-9c81-441f-bd1c-ca21879f6c36" name="Changes" comment="" />
+    <list default="true" id="8fd530bd-9c81-441f-bd1c-ca21879f6c36" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/heshanthenura/EasyJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/heshanthenura/EasyJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EasyJavaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EasyJavaTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,8 +40,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.EasyJava.executor": "Run",
+    "Application.EasyJavaTest.executor": "Run",
     "JUnit.EasyJavaTest.executor": "Run",
     "JUnit.EasyJavaTest.main.executor": "Run",
+    "JUnit.EasyJavaTest.mainTest.executor": "Run",
+    "JUnit.EasyJavaTest.testInput.executor": "Run",
     "JUnit.EasyJavaTest.testMain.executor": "Run",
     "JUnit.EasyJavaTest.testRange.executor": "Run",
     "JUnit.EasyJavaTest.testRangePrinting.executor": "Run",
@@ -74,21 +82,29 @@
       <recent name="E:\Coding\Java\Projects\EasyJava\target" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EasyJavaTest.testRangePrinting">
-    <configuration name="EasyJavaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EasyJava" />
-      <option name="PACKAGE_NAME" value="" />
+  <component name="RunManager" selected="Application.EasyJavaTest">
+    <configuration name="EasyJavaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EasyJavaTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <module name="EasyJava" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EasyJavaTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EasyJavaTest.mainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EasyJava" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EasyJavaTest" />
-      <option name="METHOD_NAME" value="main" />
+      <option name="METHOD_NAME" value="mainTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EasyJavaTest.testInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EasyJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EasyJavaTest" />
+      <option name="METHOD_NAME" value="testInput" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,16 +115,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EasyJavaTest" />
       <option name="METHOD_NAME" value="testMain" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EasyJavaTest.testRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EasyJava" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EasyJavaTest" />
-      <option name="METHOD_NAME" value="testRange" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EasyJavaTest" />
+        <item itemvalue="JUnit.EasyJavaTest.testInput" />
+        <item itemvalue="JUnit.EasyJavaTest.mainTest" />
         <item itemvalue="JUnit.EasyJavaTest.testRangePrinting" />
         <item itemvalue="JUnit.EasyJavaTest.testMain" />
-        <item itemvalue="JUnit.EasyJavaTest.main" />
-        <item itemvalue="JUnit.EasyJavaTest" />
-        <item itemvalue="JUnit.EasyJavaTest.testRange" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +156,8 @@
       <workItem from="1709273391776" duration="2061000" />
       <workItem from="1709278085231" duration="1712000" />
       <workItem from="1709287077184" duration="1433000" />
-      <workItem from="1709300749765" duration="11795000" />
+      <workItem from="1709300749765" duration="12540000" />
+      <workItem from="1709380142588" duration="2068000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,11 @@
 import io.github.heshanthenura.EasyJava;
 import org.junit.Test;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.List;
+import java.util.Scanner;
 
 import static org.junit.Assert.*;
 
@@ -71,8 +75,56 @@ public class EasyJavaTest {
 
     @Test
     public void testRangePrinting() {
-        System.out.println(EasyJava.range(0,5));
+        for (Integer i : EasyJava.range(10)) {
+            System.out.println("*".repeat(i));
+        }
     }
 
+    @Test
+    public void testInput() {
+        // Prepare input and output streams
+        String simulatedInput = "John Doe";
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(simulatedInput.getBytes());
+        System.setIn(inputStream);
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outputStream));
 
+        // Call the input method with prompt message
+        String inputString = (String) EasyJava.input("Enter your name: ");
+
+        // Check if the prompt message was printed
+        assertEquals("Enter your name: ", outputStream.toString());
+
+        // Check if the inputString is correct
+        assertEquals("John Doe", inputString);
+
+        // Reset System.in and System.out
+        System.setIn(System.in);
+        System.setOut(System.out);
+
+        // Test with delimiter
+        simulatedInput = "apple banana cherry";
+        inputStream = new ByteArrayInputStream(simulatedInput.getBytes());
+        System.setIn(inputStream);
+        outputStream = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outputStream));
+
+        // Call the input method with prompt message and delimiter
+        List<String> inputList = (List<String>) EasyJava.input("Enter fruits separated by space: ", " ");
+
+        // Check if the prompt message was printed
+        assertEquals("Enter fruits separated by space: ", outputStream.toString());
+
+        // Check if the inputList is correct
+        assertEquals(List.of("apple", "banana", "cherry"), inputList);
+
+        // Reset System.in and System.out
+        System.setIn(System.in);
+        System.setOut(System.out);
+    }
+
+    public static void main(String[] args) {
+        List<String> name = (List<String>) EasyJava.input("Test: "," ");
+        System.out.println(name.size());
+    }
 }

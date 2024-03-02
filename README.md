@@ -16,17 +16,35 @@ implementation group: 'io.github.heshanthenura', name: 'easy-java', version: '0.
 #### for other build tools check this [site](https://central.sonatype.com/artifact/io.github.heshanthenura/easy-java).
 
 ### Menu
-#### 1. [Generating a Range of Integers](#1-generating-a-range-of-integers-1)
-#### 2. [Generating Random Numbers](#generating-random-numbers)
- - 2.1 [Integer](#integer)
- - 2.2 [Double](#double)
- - 2.3 [Float](#float)
-#### 3. [Generating a Random Boolean Value](#generating-a-random-boolean-value)
-#### 4. [Getting a Random Element from a List](#getting-a-random-element-from-a-list)
+#### [User Input](#user-input)
+#### [Generating a Range of Integers](#1-generating-a-range-of-integers-1)
+#### [Generating Random Numbers](#generating-random-numbers)
+ - [Integer](#integer)
+ - [Double](#double)
+ - [Float](#float)
+#### [Generating a Random Boolean Value](#generating-a-random-boolean-value)
+#### [Getting a Random Element from a List](#getting-a-random-element-from-a-list)
+
 
 ### Usage
 
-#### 1. Generating a Range of Integers
+#### User Input
+```java
+// Simple input prompt
+String userInput = (String) EasyJava.input();
+
+// Input prompt with a custom message
+String name = (String) EasyJava.input("Enter your name: ");
+
+// Input prompt with a custom message and delimiter
+List<String> words = (List<String>) EasyJava.input("Enter words separated by commas: ", ",");
+
+```
+* If no arguments are provided, the method prompts the user for input without displaying any message or using a delimiter.
+* With a single argument, the method uses it as the prompt message.
+* With two arguments, the first argument is the prompt message, and the second is the delimiter for splitting the input string.
+
+#### Generating a Range of Integers
 ```java 
 List<Integer> numbers = EasyJava.range(start);
 easyJava.range(10);

@@ -1,8 +1,6 @@
 package io.github.heshanthenura;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class EasyJava {
 
@@ -131,5 +129,41 @@ public class EasyJava {
         int randomIndex = random.nextInt(list.size());
         return list.get(randomIndex);
     }
+
+
+
+    /**
+     * Prompts the user with a specified message and returns the input string.
+     * If a delimiter string is provided, splits the input string by the delimiter and returns a list of tokens.
+     *
+     * @param args an optional array containing the prompt message and the delimiter character (optional)
+     * @return the input string entered by the user, or a list of tokens if a delimiter is specified
+     */
+    public static Object input(String... args) {
+        Scanner scanner = new Scanner(System.in);
+        String prompt = "";
+        String delimiter = "";
+
+        if (args.length > 0) {
+            prompt = args[0];
+            if (args.length > 1) {
+                delimiter = args[1];
+            }
+        }
+
+        if (!prompt.isEmpty()) {
+            System.out.print(prompt);
+        }
+
+        String input = scanner.nextLine();
+        scanner.close();
+
+        if (!delimiter.isEmpty()) {
+            return Arrays.asList(input.split(delimiter));
+        } else {
+            return input;
+        }
+    }
+
 
 }
