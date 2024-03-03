@@ -1,5 +1,6 @@
 package io.github.heshanthenura;
 
+import java.io.*;
 import java.util.*;
 
 public class EasyJava {
@@ -22,10 +23,10 @@ public class EasyJava {
     public static List<Integer> range(int start, Integer... args) {
         List<Integer> numList = new ArrayList<>();
 
-        int end = start; // Default end value
-        int step = 1; // Default step size
+        int end = start;
+        int step = 1;
 
-        // Parse arguments
+
         if (args.length > 0) {
             if (args[0] != null) {
                 end = args[0];
@@ -35,22 +36,20 @@ public class EasyJava {
             }
         }
 
-        // If only start is specified, return a list from 0 to start (exclusive)
         if (args.length == 0) {
             for (int i = 0; i < start; i++) {
                 numList.add(i);
             }
         } else {
-            // If start, end, and step are specified
             if (start < end && step > 0) {
                 for (int i = start; i < end; i += step) {
                     numList.add(i);
                 }
-            } else if (start > end && step < 0) { // If step is negative and start > end
+            } else if (start > end && step < 0) {
                 for (int i = start; i > end; i += step) {
                     numList.add(i);
                 }
-            } else if (start > end && step > 0) { // If start > end and step > 0 (return in decreasing order)
+            } else if (start > end && step > 0) {
                 for (int i = start; i > end; i -= step) {
                     numList.add(i);
                 }
@@ -165,5 +164,73 @@ public class EasyJava {
         }
     }
 
+    /**
+     * Reads the content of a text file and returns it as a single string.
+     *
+     * @param filePath the path to the text file to be read
+     * @return a string representing the content of the file
+     * @throws IOException if an I/O error occurs while reading the file
+     */
+    public static String readFile(String filePath) throws IOException {
+        StringBuilder content = new StringBuilder();
+        BufferedReader reader = new BufferedReader(new FileReader(filePath));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            content.append(line).append(System.lineSeparator());
+        }
+        reader.close();
+        return content.toString();
+    }
+
+    /**
+     * Appends content to a text file.
+     *
+     * @param filePath the path to the text file
+     * @param content  the content to append to the file
+     * @throws IOException if an I/O error occurs while writing to the file
+     */
+    public static void appendToFile(String filePath, String content) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true));
+        writer.append(content);
+        writer.close();
+    }
+
+
+    /**
+     * Reads the content of a text file line by line and returns it as a list of strings.
+     *
+     * @param filePath the path to the text file to be read
+     * @return a list of strings representing the lines of the file
+     * @throws IOException if an I/O error occurs while reading the file
+     */
+    public static List<String> readLines(String filePath) throws IOException {
+        List<String> lines = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new FileReader(filePath));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            lines.add(line);
+        }
+        reader.close();
+        return lines;
+    }
+
+    /**
+     * Prepends content to a text file.
+     *
+     * @param filePath the path to the text file
+     * @param content  the content to prepend to the file
+     * @throws IOException if an I/O error occurs while writing to the file
+     */
+    public static void prependToFile(String filePath, String content) throws IOException {
+        List<String> lines = readLines(filePath);
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
+        writer.write(content);
+        writer.newLine();
+        for (String line : lines) {
+            writer.write(line);
+            writer.newLine();
+        }
+        writer.close();
+    }
 
 }

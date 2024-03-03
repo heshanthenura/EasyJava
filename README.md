@@ -16,6 +16,7 @@ implementation group: 'io.github.heshanthenura', name: 'easy-java', version: '0.
 #### for other build tools check this [site](https://central.sonatype.com/artifact/io.github.heshanthenura/easy-java).
 
 ### Menu
+#### [File Manipulation](#file-manipulation)
 #### [User Input](#user-input)
 #### [Generating a Range of Integers](#1-generating-a-range-of-integers-1)
 #### [Generating Random Numbers](#generating-random-numbers)
@@ -28,6 +29,34 @@ implementation group: 'io.github.heshanthenura', name: 'easy-java', version: '0.
 
 ### Usage
 
+#### File Manipulation
+* Read File:
+```java
+// Read the content of a text file into a single string
+String fileContent = EasyJava.readFile("example.txt");
+```
+This method reads the content of a text file and returns it as a single string.
+
+* Append to File:
+```java
+// Append content to a text file
+String contentToAppend = "New content to append";
+EasyJava.appendToFile("example.txt", contentToAppend);
+```
+This method appends the specified content to the end of a text file.
+* Read Lines:
+```java
+// Read the content of a text file line by line into a list of strings
+List<String> fileLines = EasyJava.readLines("example.txt");
+```
+This method reads the content of a text file line by line and returns it as a list of strings.
+* Prepend to File:
+```java
+// Prepend content to a text file
+String contentToPrepend = "New content to prepend";
+EasyJava.prependToFile("example.txt", contentToPrepend);
+```
+This method prepends the specified content to the beginning of a text file.
 #### User Input
 ```java
 // Simple input prompt

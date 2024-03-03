@@ -3,6 +3,7 @@ import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.util.List;
 import java.util.Scanner;
@@ -123,8 +124,7 @@ public class EasyJavaTest {
         System.setOut(System.out);
     }
 
-    public static void main(String[] args) {
-        List<String> name = (List<String>) EasyJava.input("Test: "," ");
-        System.out.println(name.size());
+    public static void main(String[] args) throws IOException {
+        EasyJava.appendToFile("E:\\Coding\\Java\\Projects\\EasyJava\\src\\test\\java\\text.txt", "\n"+"asdas");
     }
 }
