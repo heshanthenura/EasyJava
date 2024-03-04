@@ -12,14 +12,17 @@ public class EasyJava {
      * If neither end nor step are specified, returns a list from 0 to start (exclusive).
      * If only start is specified, returns a list from 0 to start (exclusive).
      * If start, end, and step are specified:
-     * - If start < end and step > 0, returns a list from start to end (exclusive) with the specified step.
-     * - If start > end and step < 0, returns a list from start to end (exclusive) with the specified negative step.
-     * - If start > end and step > 0, returns a list from start to end (exclusive) in decreasing order with the specified step.
+     * <ul>
+     *   <li>If start &lt; end and step &gt; 0, returns a list from start to end (exclusive) with the specified step.</li>
+     *   <li>If start &gt; end and step &lt; 0, returns a list from start to end (exclusive) with the specified negative step.</li>
+     *   <li>If start &gt; end and step &gt; 0, returns a list from start to end (exclusive) in decreasing order with the specified step.</li>
+     * </ul>
      *
      * @param start the starting value of the range (inclusive)
      * @param args  an optional array containing the ending value of the range (exclusive) and the step size
      * @return a list of integers within the specified range
      */
+
     public static List<Integer> range(int start, Integer... args) {
         List<Integer> numList = new ArrayList<>();
 
