@@ -32,44 +32,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EasyJava.executor": "Run",
-    "Application.EasyJavaTest.executor": "Run",
-    "JUnit.EasyJavaTest.executor": "Run",
-    "JUnit.EasyJavaTest.main.executor": "Run",
-    "JUnit.EasyJavaTest.mainTest.executor": "Run",
-    "JUnit.EasyJavaTest.testInput.executor": "Run",
-    "JUnit.EasyJavaTest.testMain.executor": "Run",
-    "JUnit.EasyJavaTest.testRange.executor": "Run",
-    "JUnit.EasyJavaTest.testRangePrinting.executor": "Run",
-    "JUnit.TestFile.testPrint.executor": "Run",
-    "Maven.EasyJava [clean].executor": "Run",
-    "Maven.EasyJava [compile].executor": "Run",
-    "Maven.EasyJava [deploy].executor": "Run",
-    "Maven.EasyJava [install].executor": "Run",
-    "Maven.EasyJava [org.apache.maven.plugins:maven-assembly-plugin:3.2.0:single].executor": "Run",
-    "Maven.EasyJava [org.jreleaser:jreleaser-maven-plugin:1.10.0:config].executor": "Run",
-    "Maven.EasyJava [org.jreleaser:jreleaser-maven-plugin:1.10.0:full-release].executor": "Run",
-    "Maven.EasyJava [package].executor": "Run",
-    "Maven.easy-java [clean].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Coding/Java/SpringBoot/Projects/ION",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EasyJava.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EasyJavaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EasyJavaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EasyJavaTest.main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EasyJavaTest.mainTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EasyJavaTest.testInput.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EasyJavaTest.testMain.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EasyJavaTest.testRange.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EasyJavaTest.testRangePrinting.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestFile.testPrint.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.EasyJava [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.EasyJava [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.EasyJava [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.EasyJava [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.EasyJava [org.apache.maven.plugins:maven-assembly-plugin:3.2.0:single].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.EasyJava [org.jreleaser:jreleaser-maven-plugin:1.10.0:config].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.EasyJava [org.jreleaser:jreleaser-maven-plugin:1.10.0:full-release].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.EasyJava [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.easy-java [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Coding/Java/SpringBoot/Projects/ION&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Coding\Java\Projects\EasyJava" />
@@ -157,6 +157,7 @@
       <workItem from="1709458178754" duration="3717000" />
       <workItem from="1709489341022" duration="2000" />
       <workItem from="1709552591974" duration="2279000" />
+      <workItem from="1709555286240" duration="823000" />
     </task>
     <servers />
   </component>
