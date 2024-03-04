@@ -6,12 +6,12 @@
 <dependency>
     <groupId>io.github.heshanthenura</groupId>
     <artifactId>easy-java</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
 </dependency>
 ```
 #### for Gradle projects
 ```
-implementation group: 'io.github.heshanthenura', name: 'easy-java', version: '0.1'
+implementation group: 'io.github.heshanthenura', name: 'easy-java', version: '0.2'
 ```
 #### for other build tools check this [site](https://central.sonatype.com/artifact/io.github.heshanthenura/easy-java).
 
