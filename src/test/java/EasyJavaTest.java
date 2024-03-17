@@ -5,6 +5,8 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
 import java.util.Scanner;
 
@@ -125,6 +127,8 @@ public class EasyJavaTest {
     }
 
     public static void main(String[] args) throws IOException {
-        EasyJava.appendToFile("E:\\Coding\\Java\\Projects\\EasyJava\\src\\test\\java\\text.txt", "\n"+"asdas");
+        URL url = new URL("https://www.youtube.com/watch?v=W_A7HuObidE&t=13769s");
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.setRequestMethod("GET");
     }
 }

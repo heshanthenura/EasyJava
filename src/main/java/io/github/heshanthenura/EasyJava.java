@@ -1,6 +1,8 @@
 package io.github.heshanthenura;
 
 import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.*;
 
 public class EasyJava {
@@ -235,5 +237,115 @@ public class EasyJava {
         }
         writer.close();
     }
+
+
+    /**
+     * A simple HTTP GET request utility class for making GET requests with headers.
+     */
+    class GetReq {
+        private String urlString;
+        private Map<String, String> headers;
+
+        /**
+         * Constructs a new GetReq instance with the specified URL.
+         *
+         * @param urlString the URL to which the GET request will be sent
+         */
+        public GetReq(String urlString) {
+            this.urlString = urlString;
+            this.headers = new HashMap<>();
+        }
+
+
+        /**
+         * Adds headers to the GET request.
+         *
+         * @param headers headers to be added to the GET request in key-value pairs
+         *                (e.g., "HeaderName1", "HeaderValue1", "HeaderName2", "HeaderValue2", ...)
+         * @throws IllegalArgumentException if the headers array length is not even
+         */
+        public void addHeaders(String... headers) {
+            if (headers.length % 2 != 0) {
+                throw new IllegalArgumentException("Headers must be provided as key-value pairs");
+            }
+            for (int i = 0; i < headers.length; i += 2) {
+                this.headers.put(headers[i], headers[i + 1]);
+            }
+        }
+
+        /**
+         * Sends the GET request with the specified headers and returns the response.
+         *
+         * @return an instance of HttpResponse containing the response code and body
+         * @throws IOException if an I/O exception occurs while sending the request or reading the response
+         */
+        public HttpResponse send() throws IOException {
+            URL url = new URL(urlString);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+            connection.setRequestMethod("GET");
+
+            for (Map.Entry<String, String> entry : headers.entrySet()) {
+                connection.setRequestProperty(entry.getKey(), entry.getValue());
+            }
+
+            int responseCode = connection.getResponseCode();
+            String responseBody = null;
+            if (responseCode == HttpURLConnection.HTTP_OK) {
+                BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                StringBuilder response = new StringBuilder();
+                String inputLine;
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+                in.close();
+                responseBody = response.toString();
+            }
+            connection.disconnect();
+            return new HttpResponse(responseCode, responseBody);
+        }
+
+        /**
+         * Represents an HTTP response containing the response code and body.
+         */
+        public static class HttpResponse {
+            private int responseCode;
+            private String responseBody;
+
+
+            /**
+             * Constructs a new HttpResponse instance with the specified response code and body.
+             *
+             * @param responseCode the HTTP response code
+             * @param responseBody the response body
+             */
+            public HttpResponse(int responseCode, String responseBody) {
+                this.responseCode = responseCode;
+                this.responseBody = responseBody;
+            }
+
+            /**
+             * Gets the HTTP response code.
+             *
+             * @return the HTTP response code
+             */
+            public int getResponseCode() {
+                return responseCode;
+            }
+
+
+            /**
+             * Gets the response body.
+             *
+             * @return the response body
+             */
+            public String getResponseBody() {
+                return responseBody;
+            }
+        }
+
+    }
+
+
 
 }
